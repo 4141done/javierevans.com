@@ -1,0 +1,33 @@
+# The URL the site will be built for
+base_url = "https://javierevans.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "after-dark"
+
+title = "My bigggity Bloggington"
+description = "Big slice of cats"
+
+taxonomies = [
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+[extra]
+author = "Javier"
+after_dark_menu = [
+    {url = "$BASE_URL", name = "home"},
+    {url = "$BASE_URL/categories", name = "categories"},
+    {url = "$BASE_URL/tags", name = "tags"},
+    {url = "https://github.com/4141done", name = "github", new_tab = "true"},
+    {url = "https://www.linkedin.com/in/evansjavier/", name = "linkedin", new_tab = "true"}
+]
+after_dark_title = "Everybody Poops  - Javier Evans"

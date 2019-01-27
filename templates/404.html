@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You did not find that thing you wanted</title>
+  <link rel="stylesheet" type="text/css" href="site.css">
+  <style type="text/css">
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .fat-number {
+      font-size: 6rem;
+      color: #f77fbe;
+    }
+  </style>
+</head>
+<body class="hack dark main container">
+  <div class="centered">
+    <p class="fat-number">404th</p>
+    <h1>The thing you wanted.  Not here.</h1>
+    <a href="{{ config.base_url }}"><-- back home</a>
+  </div>
+</body>
+</html>
